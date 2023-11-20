@@ -1,0 +1,183 @@
+.hometest {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  padding: 100px 7%;
+  display: flex;
+  gap: 60px;
+  // min-height: 100vh;
+  flex-direction: column;
+}
+
+.hometest__header {
+  font-size: 3.3rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  border-radius: 10px;
+  position: relative;
+  width: 65%;
+  height: 55vh;
+  font-size: 18px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.167);
+
+  opacity: 0.2;
+
+  color: rgb(255, 255, 255);
+  transition: all 0.5s linear;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 3.2rem;
+  color: rgb(53, 144, 236);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.558);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(29, 140, 248);
+}
+
+.swiper-button-next {
+  right: 14.5%;
+}
+.swiper-button-prev {
+  left: 14.5%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+///main slide
+
+.slide__container {
+  border-radius: 10px;
+  height: 100%;
+  background: rgb(22, 24, 62);
+  position: relative;
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 9%;
+}
+.fa-solid.fa-quote-left {
+  // display: none;
+  color: rgba(248, 248, 248, 0.121);
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 8rem;
+}
+
+.fa-solid.fa-quote-right {
+  color: rgba(195, 201, 239, 0.121);
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-size: 8rem;
+}
+
+.slide__testimonial {
+  position: relative;
+
+  z-index: 15;
+
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    font-style: italic;
+  }
+}
+
+.client__image--container {
+  height: 12rem;
+  width: 12rem;
+  background: rgb(245, 245, 247);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.swiper-slide img {
+  width: 11rem;
+  height: 11rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  position: relative;
+  z-index: 15;
+  border-radius: 50%;
+}
+
+.slide__client {
+  position: relative;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.client__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.client__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: antiquewhite;
+}
+
+.client__post {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: rgba(222, 222, 222, 0.8);
+}
+
+.client__company {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: rgba(222, 222, 222, 0.8);
+}

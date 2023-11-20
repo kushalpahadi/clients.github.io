@@ -1,0 +1,48 @@
+.background__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.background__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.551);
+  // background: rgba(0, 0, 0, 0.721);
+}
+
+// .cursor {
+//   height: 25px;
+//   width: 25px;
+//   background-color: rgb(17, 132, 234);
+//   position: fixed;
+//   z-index: 100;
+//   border-radius: 50%;
+//   mix-blend-mode: hard-light;
+
+//   @media (max-width: 900px) {
+//     display: none;
+//   }
+// }
+.cursorblur {
+  height: 120px;
+  width: 120px;
+  background-color: rgb(15, 122, 216);
+  position: fixed;
+  z-index: 9;
+  border-radius: 50%;
+  filter: blur(120px);
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
